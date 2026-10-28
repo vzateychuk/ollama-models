@@ -13,8 +13,8 @@ PARAMETER num_predict 4096
 ## Создать модель
 
 ```bash
-ollama create granite4.2:3b-32k -f granite4.2:3b-32k.Modelfile
-ollama create omnicoder-2-9b-32k -f omnicoder-2-9b-32k.Modelfile
+ollama create granite4.2:3b-8k -f granite4.2:3b-8k.Modelfile
+ollama create ornith-1.5:9b-16k -f ornith-1.5:9b-16k.Modelfile
 
 
 ```

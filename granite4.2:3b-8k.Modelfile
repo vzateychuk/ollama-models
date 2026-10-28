@@ -1,0 +1,13 @@
+FROM granite4.2:3b
+
+# Окно контекста 8K (оптимально для CPU)
+PARAMETER num_ctx 8192
+
+# Разумный потолок: хватает для мыслей и кода, не съедает контекст
+PARAMETER num_predict 2048
+
+# Температура для точности
+PARAMETER temperature 0.2
+
+# Системный промпт для сдерживания многословия
+SYSTEM "You are an expert programming assistant. When asked about bugs or code edits, respond directly and concisely without verbose thinking or long preambles."
